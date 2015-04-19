@@ -7,7 +7,9 @@ public class romanAdderTest {
 
   @Test
   public void test() {
-    assertEquals("III", romanAdder.add("I","II"));
+    // assertEquals("III", romanAdder.add("I","II"));
+    
+    assertEquals("V", romanAdder.add("IIII","I"));
   }
 
 }
