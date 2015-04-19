@@ -11,6 +11,8 @@ public class romanAdder {
         .replace("IIIII","V")
         
         .replace( "VV", "X" )
+        .replace( "XXXXX", "L" )
+        
         ;
   }
   
