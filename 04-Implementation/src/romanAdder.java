@@ -9,11 +9,10 @@ public class romanAdder {
   private static String normaliser(String resultat) {
     return resultat
         .replace("IIIII","V")
-        
         .replace( "VV", "X" )
         .replace( "XXXXX", "L" )
         .replace( "LL", "C" )
-        
+        .replace( "CCCCC", "D" )
         ;
   }
   
