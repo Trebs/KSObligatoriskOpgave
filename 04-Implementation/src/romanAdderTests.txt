@@ -1,0 +1,16 @@
+Tests:
+
+I+I = II 
+IIII+I = V
+V+V = X
+XXXX+X = L
+L+L = D
+CCCC+c = D
+D+D = M
+
+
+
+vII+vIII = XV
+MDCCCXXXXVII+MMLCXXXIIII=MMMMXXXI
+MMMMDCCCCLXXXXVIIII + I = Error
+
