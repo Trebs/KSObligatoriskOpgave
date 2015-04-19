@@ -1,10 +1,12 @@
 import java.util.Arrays;
 
+import com.sun.xml.internal.ws.util.StringUtils;
+
 
 public class romanAdder {
 
   public static String add(String venstre, String hojre) {
-    return normaliser(sortering(normaliser(sortering(venstre + hojre))));
+    return testStorrelse(normaliser(sortering(normaliser(sortering(venstre + hojre)))));
   }
   
   
@@ -50,4 +52,13 @@ public class romanAdder {
     return efterSort(sorted);
   }
   
+  private static String testStorrelse (String test) {
+    int count = test.length() - test.replace("M", "").length();  
+  
+    if ( count >= 5 ) {
+        return "ERROR! Tal for stort!";
+      } else {
+        return test;
+      }
+  }
 }
