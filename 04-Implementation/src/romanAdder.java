@@ -12,7 +12,7 @@ public class romanAdder {
         
         .replace( "VV", "X" )
         .replace( "XXXXX", "L" )
-        .replace( "LL", "D" )
+        .replace( "LL", "C" )
         
         ;
   }
