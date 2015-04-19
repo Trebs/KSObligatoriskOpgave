@@ -23,7 +23,9 @@ public class romanAdderTest {
     
     //assertEquals("XV", romanAdder.add( "VII", "VIII" ));
     
-    assertEquals("MMMMXXXI", romanAdder.add( "MDCCCXXXXVII", "MMLCXXXIIII" ));
+    // assertEquals("MMMMXXXI", romanAdder.add( "MDCCCXXXXVII", "MMLCXXXIIII" ));
+    
+    assertEquals("ERROR! Tal for stort!", romanAdder.add( "MMMMDCCCCLXXXXVIIII", "I" ));
   }
 
 }
