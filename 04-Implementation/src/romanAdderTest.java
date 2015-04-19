@@ -7,7 +7,7 @@ public class romanAdderTest {
 
   @Test
   public void test() {
-    fail( "Not yet implemented" );
+    assertEquals("III", romanAdder.add("I","II"));
   }
 
 }
