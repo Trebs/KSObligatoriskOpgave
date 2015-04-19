@@ -17,7 +17,9 @@ public class romanAdderTest {
     
     //assertEquals("C", romanAdder.add("L","L"));
     
-    assertEquals("D", romanAdder.add("CCCC","C"));
+    //assertEquals("D", romanAdder.add("CCCC","C"));
+    
+    assertEquals("M", romanAdder.add("D","D"));
   }
 
 }
