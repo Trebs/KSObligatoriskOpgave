@@ -21,7 +21,9 @@ public class romanAdderTest {
     
     //assertEquals("M", romanAdder.add("D","D"));
     
-    assertEquals("XV", romanAdder.add( "VII", "VIII" ));
+    //assertEquals("XV", romanAdder.add( "VII", "VIII" ));
+    
+    assertEquals("MMMMXXXI", romanAdder.add( "MDCCCXXXXVII", "MMLCXXXIIII" ));
   }
 
 }
