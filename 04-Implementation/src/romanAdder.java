@@ -4,7 +4,7 @@ import java.util.Arrays;
 public class romanAdder {
 
   public static String add(String venstre, String hojre) {
-    return normaliser(sortering(venstre + hojre));
+    return normaliser(sortering(normaliser(sortering(venstre + hojre))));
   }
   
   
@@ -31,23 +31,23 @@ public class romanAdder {
        ;
   }
   
-  private static String efterSort (String førSort) {
-    return førSort
+  private static String efterSort (String efterSort) {
+    return efterSort
         .replace( "a", "M" )
         .replace( "b", "D" )
         .replace( "c", "C" )
         .replace( "d", "L" )
-        .replace( "e", "E" )
+        .replace( "e", "V" )
         .replace( "f", "X" )
         .replace( "g", "I" )
         ;
    }
   
   private static String sortering(String sort) {
-    førSort(sort);
-    char[] chars = sort.toCharArray();
+    char[] chars = førSort(sort).toCharArray();
     Arrays.sort(chars);
     String sorted = new String(chars);
-    return(efterSort(sorted));
+    return efterSort(sorted);
   }
+  
 }
